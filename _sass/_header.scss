@@ -1,0 +1,45 @@
+.site__header {
+    display: table-cell;
+    height: 100%;
+    background-color: #000;
+    vertical-align: top;
+    
+    .logo {
+        width: 200px;
+        height: 200px;
+        margin: 15px;
+    }
+
+    .logo__img {
+        max-width: 100%;
+    }
+}
+
+.site__nav {
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-top: 10px;
+    }
+
+    li.active a {
+        background-color:#d79d32!important;
+        color: #000!important;
+        font-weight: bold;
+    }
+
+    a {
+        display: block;
+        color: #ededed;
+        text-decoration: none;
+        padding: 5px 15px;
+    }
+
+    a:hover {
+        background-color: #282828;
+    }
+}

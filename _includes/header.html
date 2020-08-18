@@ -1,0 +1,16 @@
+<header class="site__header">
+    <div class="logo">
+        <img src="/assets/images/logo.png" alt="Tune MTB logo" class="logo__img"/>
+    </div>
+    <nav class="site__nav">
+        <ul>
+            {% for link in site.navigation %}
+                {% if link.url == page.url %}
+                    <li class="active"><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% else %}
+                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

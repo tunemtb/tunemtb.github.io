@@ -6,9 +6,9 @@
         <ul>
             {% for link in site.navigation %}
                 {% if link.url == page.url %}
-                    <li class="active"><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    <li class="active"><a href="{{ link.url | relative_url}}">{{ link.title }}</a></li>
                 {% else %}
-                    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    <li><a href="{{ link.url | relative_url}}">{{ link.title }}</a></li>
                 {% endif %}
             {% endfor %}
         </ul>

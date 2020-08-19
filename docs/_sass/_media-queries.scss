@@ -1,0 +1,33 @@
+// --------------------------------------------------
+// Media Query Mixins
+// --------------------------------------------------
+
+$xs: 480px !default;
+$sm: 768px !default;
+$md: 992px !default;
+$lg: 1200px !default;
+$xlg: 1505px !default;
+
+@mixin mq($mqType) {
+	@if $mqType == lg {
+		@media (min-width: $lg) { @content; }
+	}
+	@else if $mqType == xlg {
+		@media (min-width: $xlg) { @content; }
+	}
+	@else if $mqType == md {
+		@media (min-width: $md) { @content; }
+	}
+	@else if $mqType == sm {
+		@media (min-width: $sm) { @content; }
+	}
+	@else if $mqType == xs {
+		@media (min-width: $xs) { @content; }
+	}
+	@else if $mqType == retina {
+		@media (-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			@content;
+		}
+	}
+}

@@ -2,15 +2,40 @@
     position: relative;
 }
 
-.hero__text {
+// .address {
+//     position: absolute;
+//     top: 50px;
+//     right: -60px;
+//     background-color: #d79d32;
+//     padding: 10px;
+//     font-size: 30px;
+//     color: #303030;
+//     font-weight: bold;
+
+//     @include mq(sm) { 
+// 		top: 50px;
+//         right: -60px;
+//     }
+// }
+
+.address {
     position: absolute;
-    top: 50px;
-    right: -60px;
+    z-index:99;
+    bottom: -30px;
+    left: 0;
     background-color: #d79d32;
     padding: 10px;
-    font-size: 30px;
+    font-size: 25px;
     color: #303030;
     font-weight: bold;
+
+    @include mq(sm) { 
+		top: 50px;
+        right: -60px;
+        left: auto;
+        bottom: auto;
+        font-size: 30px;
+    }
 }
 
 .hero__image {

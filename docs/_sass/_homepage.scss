@@ -2,22 +2,6 @@
     position: relative;
 }
 
-// .address {
-//     position: absolute;
-//     top: 50px;
-//     right: -60px;
-//     background-color: #d79d32;
-//     padding: 10px;
-//     font-size: 30px;
-//     color: #303030;
-//     font-weight: bold;
-
-//     @include mq(sm) { 
-// 		top: 50px;
-//         right: -60px;
-//     }
-// }
-
 .address {
     position: absolute;
     z-index:99;

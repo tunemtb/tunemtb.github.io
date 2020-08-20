@@ -1,7 +1,10 @@
 .site__content {
-    display: table-cell;
     color: #fff;
     max-width: 1200px;
+
+    @include mq(sm) { 
+        display: table-cell;
+    }
     
     * {
         max-width: 100%;

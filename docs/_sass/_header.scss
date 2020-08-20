@@ -1,27 +1,31 @@
-.site__header {
-    display: none;
+.site__header {  
+    background-color: #000;
 
     @include mq(sm) { 
-		display: table-cell;
+        height: 100%;
+        display: table-cell;
+        vertical-align: top;
     }
     
-    height: 100%;
-    background-color: #000;
-    vertical-align: top;
-    
     .logo {
-        width: 200px;
-        height: 200px;
-        margin: 15px;
+        padding: 15px;
+        text-align:center;
     }
 
     .logo__img {
-        max-width: 100%;
+        width: 200px;
+        height: 200px;
+        display: block;
     }
     
 }
 
 .site__nav {
+    display: none;
+
+    @include mq(sm) { 
+        display: block;
+    }
 
     ul {
         list-style-type: none;

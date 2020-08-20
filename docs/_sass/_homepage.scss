@@ -3,45 +3,59 @@
 }
 
 .address {
-    position: absolute;
-    z-index:99;
-    bottom: -30px;
-    left: 0;
     background-color: #d79d32;
-    padding: 10px;
+    padding: 20px;
     font-size: 25px;
     color: #303030;
     font-weight: bold;
+    text-align: center;
 
     @include mq(sm) { 
+        position: absolute;
+        z-index:99;
 		top: 50px;
         right: -60px;
-        left: auto;
-        bottom: auto;
+        text-align: left;
         font-size: 30px;
     }
 }
 
 .hero__image {
-    display: block;
+    display: none;
+
+    @include mq(sm) { 
+        display: block;
+    }
 }
 
 .callout-1 {
-    max-width: 1200px;
-    background-color: #6DA34D;
     color: #303030;
-    padding: 100px;
-    position: relative;
-    
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #6DA34D;
+    text-align: center;
+
+    @include mq(sm) { 
+        text-align: left;
+        overflow-y:visible;
+        max-width: 1200px;
+        color: #303030;
+        padding: 100px;
+        position: relative;
+    }
 }
 
 .callout-1__title {
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 60px;
-    text-transform: uppercase;
+    display: none;
+
+    @include mq(sm) { 
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 60px;
+        text-transform: uppercase;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
 }
 
 .callout-1__photo {
@@ -58,26 +72,45 @@
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+
+    @include mq(sm) { 
+        font-size: 40px;
+    }
 }
 
 .hours {
-    float: left;
+    @include mq(sm) { 
+        float: left;
+    }
 }
 
 .hours__table {
     color: #fff;
     font-size: 23px;
     max-width: 100%;
-    margin-bottom: 100px;
+    // margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+
+    @include mq(sm) { 
+        margin-bottom: 100px;
+    }
 
     th {
-        text-align: left;
+        text-align: center;
         padding: 10px;
+
+        @include mq(sm) { 
+            text-align: left;
+        }
     }
 
     td {
-        text-align: left;
+        text-align: center;
         padding: 10px;
+
+        @include mq(sm) { 
+            text-align: left;
+        }
     }
 
     tr:nth-child(odd) {

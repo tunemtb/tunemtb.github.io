@@ -1,5 +1,6 @@
 .site__header {  
     background-color: #000;
+    display: block;
 
     @include mq(sm) { 
         height: 100%;
@@ -8,14 +9,14 @@
     }
     
     .logo {
-        padding: 15px;
+        padding: 20px;
         text-align:center;
     }
 
     .logo__img {
         width: 200px;
         height: 200px;
-        display: block;
+        display: inline-block;
     }
     
 }

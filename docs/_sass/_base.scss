@@ -8,6 +8,7 @@ html {
 
 html, body {
   height: 100%;
+  width: 100%;
   padding:0;
   margin: 0;
 }
@@ -39,6 +40,10 @@ pre {
 }
 
 .site-container {
-  display: table;
-  height: 100%;
+  width: 100%;
+  @include mq(sm) { 
+    display: table;
+    width: auto;
+    height: 100%;
+  }
 }

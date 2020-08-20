@@ -2,13 +2,13 @@
     position: relative;
 }
 
-.address {
+.location {
     background-color: #d79d32;
     padding: 20px;
     font-size: 25px;
     color: #303030;
-    font-weight: bold;
     text-align: center;
+    font-weight: bold;
 
     @include mq(sm) { 
         position: absolute;
@@ -66,8 +66,9 @@
 
 }
 
-.hours__text {
+.hours__title {
     padding: 0 0 10px 0;
+    margin: 0;
     font-size: 40px;
     color: #fff;
     text-transform: uppercase;
@@ -87,11 +88,11 @@
 .hours__table {
     color: #fff;
     font-size: 23px;
-    max-width: 100%;
-    // margin-bottom: 20px;
+    width: 100%;
     margin: 0 auto 20px auto;
 
     @include mq(sm) { 
+        width: auto;
         margin-bottom: 100px;
     }
 

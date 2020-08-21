@@ -147,6 +147,14 @@
     color: #303030;
     clear: both;
     padding: 40px 30px;
+
+    a {
+        color: #303030;
+    }
+
+    p {
+        font-size: 30px;
+    }
 }
 
 .callout-2__title {
@@ -156,4 +164,8 @@
     font-size: 60px;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.callout-2__service-menu-link {
+    font-weight: bold;
 }

@@ -13,10 +13,16 @@
     @include mq(sm) { 
         position: absolute;
         z-index:99;
-		top: 50px;
-        right: -60px;
+		top:0;
+        right: 0;
         text-align: left;
         font-size: 30px;
+    }
+
+    @include mq(xlg) { 
+        top: auto;
+        top: 20px;
+        right: -60px;
     }
 }
 
@@ -37,11 +43,14 @@
 
     @include mq(sm) { 
         text-align: left;
-        overflow-y:visible;
         max-width: 1200px;
         color: #303030;
-        padding: 100px;
+        padding: 40px 30px 40px 30px;
         position: relative;
+    }
+
+    @include mq(lg) {
+        overflow-y:visible;
     }
 }
 
@@ -59,11 +68,20 @@
 }
 
 .callout-1__photo {
-    position: absolute;
-    top: 240px;
-    right: -60px;
-    max-width: 700px;
+    display: none;
 
+    @include mq(lg) { 
+        width: 460px;
+        display: block;
+        position: absolute;
+        top: 150px;
+        right: 0;
+    }
+
+    @include mq(xlg) { 
+        width: 700px;
+        right: -60px;
+    }
 }
 
 .hours__title {
@@ -89,10 +107,13 @@
     color: #fff;
     font-size: 23px;
     width: 100%;
-    margin: 0 auto 20px auto;
+    margin: 0 0 20px 0;
 
     @include mq(sm) { 
         width: auto;
+    }
+
+    @include mq(lg) {
         margin-bottom: 100px;
     }
 

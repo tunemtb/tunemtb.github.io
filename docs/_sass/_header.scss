@@ -2,7 +2,10 @@
     background-color: #000;
     display: block;
 
-    @include mq(sm) { 
+    @include mq(sm) {
+        position: fixed;
+        top: 0;
+        left: 0;
         height: 100%;
         display: table-cell;
         vertical-align: top;

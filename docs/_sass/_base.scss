@@ -44,6 +44,7 @@ pre {
   width: 100%;
   @include mq(sm) { 
     display: table;
+    padding-left: 240px;
     width: auto;
     height: 100%;
   }

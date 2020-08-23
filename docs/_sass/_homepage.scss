@@ -2,40 +2,60 @@
     position: relative;
 }
 
-.location {
+.contact-card {
     background-color: $black;
     font-size: 25px;
     color: $white;
     text-align: center;
     font-weight: bold;
+    width: 250px;
 
     @include mq(sm) { 
         position: absolute;
         z-index:99;
-		top:0;
-        right: 0;
         text-align: left;
         font-size: 30px;
     }
 
-    @include mq(xlg) {  
-        top: auto;
-        top: 20px;
-        right: -60px;
-    }
-
-    .fa-map-pin {
+    .fas {
         position: absolute;
         color: $white;
         top: 10px;
+        left: 15px;
     }
+
 }
 
-.location__address {
+.contact-card__content {
     font-size: 16px;
     margin: 2px;
-    padding: 10px 20px 10px 25px;
+    padding: 10px 20px 10px 55px;
     border: 1px solid $dark-grey;
+}
+
+.location {
+
+    @include mq(sm) { 
+		top:0;
+        right: 0;
+    }
+
+    @include mq(xlg) {  
+        top: 20px;
+        right: -60px;
+    }
+}
+.phone {
+
+    @include mq(sm) { 
+		top:100px;
+        right: 0;
+    }
+
+    @include mq(xlg) {  
+        top: 120px;
+        right: -60px;
+    }
 }
 
 .hero__image {

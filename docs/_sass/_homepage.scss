@@ -6,15 +6,32 @@
     background-color: $black;
     font-size: 25px;
     color: $white;
-    text-align: center;
     font-weight: bold;
-    width: 250px;
+    width: 100%;
+    text-align: center;
 
     @include mq(sm) { 
         position: absolute;
         z-index:99;
-        text-align: left;
+        width: 250px;
         font-size: 30px;
+    }
+
+}
+
+.contact-card__content {
+    font-size: 16px;
+    padding: 10px 20px 10px 55px;
+    margin: 2px;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 250px;
+
+    @include mq(sm) { 
+        border: 1px solid $dark-grey;
+        display: block;
+        width: auto;
     }
 
     .fas {
@@ -22,15 +39,8 @@
         color: $white;
         top: 10px;
         left: 15px;
+        font-size: 25px;
     }
-
-}
-
-.contact-card__content {
-    font-size: 16px;
-    margin: 2px;
-    padding: 10px 20px 10px 55px;
-    border: 1px solid $dark-grey;
 }
 
 .location {

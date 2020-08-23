@@ -20,5 +20,3 @@ navigation:
     url: /history/
   - title: Contact
     url: /contact/
-
-relative_permalinks: false

@@ -3,10 +3,9 @@
 }
 
 .location {
-    background-color: #d79d32;
-    padding: 20px;
+    background-color: $black;
     font-size: 25px;
-    color: #303030;
+    color: $white;
     text-align: center;
     font-weight: bold;
 
@@ -19,11 +18,24 @@
         font-size: 30px;
     }
 
-    @include mq(xlg) { 
+    @include mq(xlg) {  
         top: auto;
         top: 20px;
         right: -60px;
     }
+
+    .fa-map-pin {
+        position: absolute;
+        color: $white;
+        top: 10px;
+    }
+}
+
+.location__address {
+    font-size: 16px;
+    margin: 2px;
+    padding: 10px 20px 10px 25px;
+    border: 1px solid $dark-grey;
 }
 
 .hero__image {
@@ -35,16 +47,16 @@
 }
 
 .callout-1 {
-    color: #303030;
+    color: $dark-grey;
     padding: 20px;
     overflow-y: auto;
-    background-color: #6DA34D;
+    background-color: $green;
     text-align: center;
 
     @include mq(sm) { 
         text-align: left;
         max-width: 1200px;
-        color: #303030;
+        color: $dark-grey;
         padding: 40px 30px 40px 30px;
         position: relative;
     }
@@ -63,7 +75,7 @@
         padding: 0;
         font-size: 60px;
         text-transform: uppercase;
-        font-family: 'Anton', sans-serif;
+        font-family: $anton;
     }
 }
 
@@ -88,14 +100,15 @@
     padding: 0 0 10px 0;
     margin: 0;
     font-size: 40px;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Anton', sans-serif;
+    font-family: $anton;
+
 
     @include mq(sm) { 
         font-size: 40px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $open-sans;
     }
 }
 
@@ -106,7 +119,7 @@
 }
 
 .hours__table {
-    color: #fff;
+    color: $white;
     font-size: 23px;
     width: 100%;
     margin: 0 0 20px 0;
@@ -138,20 +151,20 @@
     }
 
     tr:nth-child(odd) {
-        background-color: lighten(#6DA34D, 10%);
+        background-color: lighten($green, 10%);
     }
 
 
 }
 
 .callout-2 {
-    background-color: #d79d32;
-    color: #303030;
+    background-color: $gold;
+    color: $dark-grey;
     clear: both;
     padding: 40px 30px;
 
     a {
-        color: #303030;
+        color: $dark-grey;
     }
 
     p {
@@ -169,7 +182,7 @@
     padding: 0;
     font-size: 40px;
     text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
+    font-family: $anton;
 
     @include mq(sm) { 
         font-size: 60px;

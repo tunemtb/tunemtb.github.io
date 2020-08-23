@@ -17,21 +17,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #000;
-  background-color: #1f1f1f;
+  color: $black;
+  background-color: $dark-grey;
 }
   
 a {
   color: #0366d6;
   text-underline-position: under;
-}
-
-code,
-pre {
-  font-family: Menlo, Consolas, "Consolas for Powerline", "Courier New", Courier, monospace;
-  background-color: #2b2b2b;
-  color: #fff;
-  padding: 0.25em
 }
 
 .clearfix::after {

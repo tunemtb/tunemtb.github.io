@@ -1,5 +1,5 @@
 .site__header {  
-    background-color: #000;
+    background-color: $black;
     display: block;
 
     @include mq(sm) {
@@ -41,8 +41,8 @@
     }
 
     li.active a {
-        background-color:#d79d32!important;
-        color: #000!important;
+        background-color:$gold!important;
+        color: $black!important;
         font-weight: bold;
     }
 

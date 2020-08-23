@@ -5,7 +5,10 @@ permalink: /
 ---
 
 <div class="hero">
-    <img src="{{ site.url }}/assets/images/photos/panorama.jpg" alt="Tune MTB Shop Panorama" class="hero__image"/>
+    <picture>
+        <source media="(min-width:768px)" srcset="{{ site.url }}/assets/images/photos/panorama.jpg">
+        <img src="{{ site.url }}/assets/images/photos/panorama.jpg" alt="Tune MTB Shop Panorama" class="hero__image"/>
+    </picture>
 
     <div class="contact-card location">
         <div class="contact-card__content">
@@ -67,7 +70,10 @@ permalink: /
         </table>
     </div>  
 
-    <img src="{{ site.url }}/assets/images/photos/bike-raised.jpg" alt="Tune MTB Shop Photo" class="callout-1__photo" />
+    <picture>
+        <source media="(min-width:768px)" srcset="{{ site.url }}/assets/images/photos/bike-raised.jpg">
+        <img src="{{ site.url }}/assets/images/photos/bike-raised.jpg" alt="Tune MTB Shop Photo" class="callout-1__photo" />
+    </picture>
 
 </div>
 

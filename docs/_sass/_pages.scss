@@ -1,0 +1,14 @@
+.page-title {
+    background-color: $green;
+
+    h1 {
+        margin: 100px;
+        line-height: 1em;
+        display: inline-block;
+        font-family: $anton;
+        color: $dark-grey;
+        text-transform: uppercase;
+        font-size: 60px;
+        text-align: left;
+    }
+}

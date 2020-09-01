@@ -1,3 +1,11 @@
+.hero__image {
+    display: none;
+
+    @include mq(sm) { 
+        display: block;
+    }
+}
+
 .page-hero {
     @include mq(sm) { 
         position: relative;
@@ -11,10 +19,11 @@
             position: absolute;
             border: 1px solid $black;
             padding: 3px;
+            max-width: 665px;
+            
         }
 
         @include mq(md) { 
-            top: 100px;
             left: 100px;
         }
     }
@@ -27,9 +36,8 @@
         padding: 20px;
         margin: 0;
         text-transform: uppercase;
-        font-size: 60px;
-        text-align: center;
-
+        font-size: 50px;
+        text-align: left;
         @include mq(sm) { 
             border: 1px solid $black;
             display: inline-block;

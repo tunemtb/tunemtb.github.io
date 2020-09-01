@@ -1,12 +1,23 @@
-.page-title {
-    background-color: $green;
+.page-hero {
+    position: relative;
+
+    .page-title {
+        background-color: #000;
+        padding: 3px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
 
     h1 {
-        margin: 100px;
+        background-color: #000;
+        border: 1px solid $dark-grey;
         line-height: 1em;
         display: inline-block;
         font-family: $anton;
-        color: $dark-grey;
+        color: $white;
+        padding: 20px;
+        margin: 0;
         text-transform: uppercase;
         font-size: 60px;
         text-align: left;

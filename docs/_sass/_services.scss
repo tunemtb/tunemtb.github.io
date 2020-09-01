@@ -1,7 +1,7 @@
 .services__table {
     background-color: $white;
     color: $black;
-    font-size: 23px;
+    font-size: 30px;
     width: 100%;
     margin: 0 0 20px 0;
     border: 0;
@@ -23,18 +23,18 @@
 
     th {
         padding: 30px 20px;
+        font-size: 40px;
         background-color: $dark-grey;
         color: $white;
         text-align: left;
         text-transform: uppercase;
         font-family: $open-sans;
-        font-size: 30px;
     }
 
     td {
-        padding: 10px 20px;
-        font-size: 16px;
-
+        padding: 40px 20px;
+        border-bottom: 10px solid $dark-grey;
+        vertical-align: top;
     }
 
     td:nth-child(1), th:nth-child(1) {
@@ -42,12 +42,12 @@
     }
 
     td:nth-child(1) {
-        font-weight: bold;
-        font-size: 16px;
+        text-transform: uppercase;
+        width: 35%;
     }
 
     td:nth-child(1), td:nth-child(2)  {
-        border-right: 2px solid $dark-grey;
+        font-weight: bold;
     }
 
     tr:nth-child(odd) {

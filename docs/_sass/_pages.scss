@@ -1,26 +1,38 @@
 .page-hero {
-    position: relative;
+    @include mq(sm) { 
+        position: relative;
+    }
 
     .page-title {
-        background-color: $white;
-        border: 1px solid $black;
-        padding: 3px;
-        position: absolute;
-        top: 100px;
-        left: 100px;
+        @include mq(sm) { 
+            background-color: $white;
+            top: 20px;
+            left: 20px;
+            position: absolute;
+            border: 1px solid $black;
+            padding: 3px;
+        }
+
+        @include mq(md) { 
+            top: 100px;
+            left: 100px;
+        }
     }
 
     h1 {
         background-color: $white;
-        border: 1px solid $black;
         line-height: 1em;
-        display: inline-block;
         font-family: $header-font;
         color: $black;
         padding: 20px;
         margin: 0;
         text-transform: uppercase;
         font-size: 60px;
-        text-align: left;
+        text-align: center;
+
+        @include mq(sm) { 
+            border: 1px solid $black;
+            display: inline-block;
+        }
     }
 }

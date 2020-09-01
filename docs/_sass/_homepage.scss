@@ -105,7 +105,7 @@
         padding: 0;
         font-size: 60px;
         text-transform: uppercase;
-        font-family: $anton;
+        font-family: $header-font;
     }
 }
 
@@ -133,7 +133,7 @@
     color: $white;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: $anton;
+    font-family: $header-font;
 
 
     @include mq(sm) { 
@@ -213,7 +213,7 @@
     padding: 0;
     font-size: 40px;
     text-transform: uppercase;
-    font-family: $anton;
+    font-family: $header-font;
 
     @include mq(sm) { 
         font-size: 60px;

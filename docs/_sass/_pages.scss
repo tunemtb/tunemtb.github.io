@@ -2,7 +2,8 @@
     position: relative;
 
     .page-title {
-        background-color: #000;
+        background-color: $white;
+        border: 1px solid $black;
         padding: 3px;
         position: absolute;
         top: 100px;
@@ -10,12 +11,12 @@
     }
 
     h1 {
-        background-color: #000;
-        border: 1px solid $dark-grey;
+        background-color: $white;
+        border: 1px solid $black;
         line-height: 1em;
         display: inline-block;
         font-family: $header-font;
-        color: $white;
+        color: $black;
         padding: 20px;
         margin: 0;
         text-transform: uppercase;

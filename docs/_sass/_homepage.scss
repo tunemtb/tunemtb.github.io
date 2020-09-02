@@ -85,6 +85,7 @@
 }
 
 .callout-1__title {
+    color: $black;
     margin: 0;
     padding: 0;
     font-size: 50px;
@@ -118,7 +119,6 @@
     font-weight: bold;
     font-family: $header-font;
 
-
     @include mq(sm) { 
         font-size: 40px;
         font-family: $open-sans;
@@ -132,7 +132,7 @@
 }
 
 .hours__table {
-    color: $white;
+    color: $dark-grey;
     font-size: 23px;
     width: 100%;
     margin: 0 0 20px 0;
@@ -142,6 +142,7 @@
     }
 
     @include mq(lg) {
+        color: $white;
         margin-bottom: 100px;
     }
 
@@ -167,7 +168,6 @@
         background-color: $gold;
         color: $dark-grey;
     }
-
 
 }
 

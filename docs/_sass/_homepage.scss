@@ -43,12 +43,11 @@
         width: 250px;
         font-size: 30px;
         left:30px;
-        top: 340px;
+        top: 260px;
     }
 
     @include mq(lg) { 
 		left:100px;
-        top: 260px;
     }
 }
 
@@ -75,11 +74,12 @@
     color: $black;
     padding: 40px 30px;
     margin: 0;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     font-family: $header-font;
 
     @include mq(lg) { 
+        font-size: 50px;
         padding: 40px 100px;
     }
 }
@@ -183,8 +183,8 @@
     font-family: $header-font;
     color: $black;
 
-    @include mq(sm) {
-        font-size: 60px;
+    @include mq(lg) {
+        font-size: 50px;
     }
 }
 

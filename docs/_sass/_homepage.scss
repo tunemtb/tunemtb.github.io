@@ -4,13 +4,10 @@
     color: $white;
     font-weight: bold;
     width: 100%;
-    text-align: center;
+    padding-left: 20px;
 
     @include mq(sm) { 
-        position: absolute;
-        z-index:99;
-        width: 250px;
-        font-size: 30px;
+        padding-left: 0;
     }
 
 }
@@ -39,30 +36,22 @@
     }
 }
 
-.location {
-
+.contact-card-container {
     @include mq(sm) { 
-		top:0;
-        right: 0;
+        position: absolute;
+        z-index:99;
+        width: 250px;
+        font-size: 30px;
+        left:30px;
+        top: 340px;
     }
 
-    @include mq(xlg) {  
-        top: 20px;
-        right: -60px;
+    @include mq(lg) { 
+		left:100px;
+        top: 260px;
     }
 }
-.phone {
 
-    @include mq(sm) { 
-		top:100px;
-        right: 0;
-    }
-
-    @include mq(xlg) {  
-        top: 120px;
-        right: -60px;
-    }
-}
 
 .callout-1 {
     // margin-top: 10px;
@@ -120,11 +109,6 @@
     text-transform: uppercase;
     font-weight: bold;
     font-family: $header-font;
-
-    @include mq(sm) { 
-        font-size: 40px;
-        font-family: $open-sans;
-    }
 }
 
 .hours {
@@ -197,8 +181,9 @@
     font-size: 40px;
     text-transform: uppercase;
     font-family: $header-font;
+    color: $black;
 
-    @include mq(sm) { 
+    @include mq(sm) {
         font-size: 60px;
     }
 }

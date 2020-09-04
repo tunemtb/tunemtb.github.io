@@ -3,3 +3,32 @@
     background-color: $white;
     color: $dark-grey;
 }
+
+.contact-form__col {
+    margin-bottom: 50px;
+    @include mq(md) {
+        float: left;
+        width: 50%;
+
+        &:nth-child(1) {
+            padding-right: 40px;
+            border-right: 2px solid $dark-grey;
+        }
+
+        &:nth-child(2) {
+            padding-left: 40px;
+        }
+    }
+}
+
+.contact-form__address {
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.contact-form__phone {
+    h2 {
+        margin-top: 50px;
+    }
+}

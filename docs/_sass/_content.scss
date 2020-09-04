@@ -1,6 +1,7 @@
 .site__content {
-    color: #fff;
+    color: $white;
     max-width: 1200px;
+    height: 100%;
 
     @include mq(sm) { 
         display: table-cell;

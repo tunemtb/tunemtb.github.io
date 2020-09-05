@@ -1,23 +1,21 @@
 .contact-form {
-    padding: 20px 100px;
-    background-color: $white;
     color: $dark-grey;
+    display: table;
+    width: 100%;
 }
 
 .contact-form__col {
-    margin-bottom: 50px;
+    padding: 50px;
+    background-color: $white;
+    display: table-cell;
+
     @include mq(md) {
-        float: left;
         width: 50%;
 
         &:nth-child(1) {
-            padding-right: 40px;
-            border-right: 2px solid $dark-grey;
+            border-right: 1px solid $dark-grey;
         }
 
-        &:nth-child(2) {
-            padding-left: 40px;
-        }
     }
 }
 

@@ -1,0 +1,17 @@
+.site-footer {
+    clear: both;
+    padding: 30px;
+
+    p:nth-child(1) {
+        margin-top: 0;
+    }
+}
+
+.site-footer__links {
+
+    a {
+        color: $white;
+        display: inline-block;
+        margin-right: 20px;
+    }
+}

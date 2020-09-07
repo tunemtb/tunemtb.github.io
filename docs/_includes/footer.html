@@ -1,0 +1,9 @@
+<div class="site-footer">
+    <p>&copy; Tune MTB Service &amp; Suspension</p>
+    <p>274 N. Goodman St<br />Suite B131<br />Rochester, NY 14607</p>
+    <div class="site-footer__links">
+        {% for link in site.navigation %}
+           <a href="{{ site.url }}{{ link.url}}">{{ link.title }}</a>
+        {% endfor %}
+    </div>
+</div>

@@ -1,3 +1,14 @@
+.services__intro {
+    padding: 30px;
+    background-color: $white;
+    color: $dark-grey;
+
+    @include mq(md) { 
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
 .services__table {
     background-color: $white;
     color: $black;

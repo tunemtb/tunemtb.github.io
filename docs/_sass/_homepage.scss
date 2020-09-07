@@ -22,7 +22,6 @@
     width: 250px;
 
     @include mq(sm) { 
-        border: 1px solid $dark-grey;
         display: block;
         width: auto;
     }

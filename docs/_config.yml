@@ -16,7 +16,5 @@ navigation:
     url: /
   - title: Services
     url: /services/
-  - title: History
-    url: /history/
   - title: Contact
     url: /contact/

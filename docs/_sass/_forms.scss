@@ -6,6 +6,26 @@
   overflow: hidden;
 }
 
+.form-requirements {
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+
+.required::after,
+.required-symbol {
+  color: #b00020;
+}
+
+.required::after {
+  content: " *";
+}
+
+.field-optional {
+  color: lighten($dark-grey, 24%);
+  font-size: .85em;
+  font-weight: 400;
+}
+
 input[type='color'],
 input[type='date'],
 input[type='datetime'],

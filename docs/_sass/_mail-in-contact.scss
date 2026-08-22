@@ -62,11 +62,6 @@
     }
 }
 
-.required::after {
-    color: #b00020;
-    content: " *";
-}
-
 .mail-in-contact__form {
     fieldset {
         margin-bottom: 24px;

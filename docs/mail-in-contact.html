@@ -49,18 +49,24 @@ permalink: /mail-in-contact/
             </fieldset>
 
             <fieldset>
-                <label for="mail-in-phone">Phone number <span class="field-optional">(optional)</span></label>
-                <input id="mail-in-phone" type="tel" name="phone" autocomplete="tel">
+                <label for="mail-in-phone"><span class="required">Phone number</span></label>
+                <input id="mail-in-phone" type="tel" name="phone" autocomplete="tel" required>
             </fieldset>
 
             <fieldset>
-                <label for="mail-in-bike">Bike year, make and model <span class="field-optional">(optional)</span></label>
-                <input id="mail-in-bike" type="text" name="bike_year_make_model">
+                <label for="mail-in-bike"><span class="required">Bike year, make and model</span></label>
+                <input id="mail-in-bike" type="text" name="bike_year_make_model" required>
             </fieldset>
 
             <fieldset>
-                <label for="mail-in-style">Riding style <span class="field-optional">(optional)</span></label>
-                <input id="mail-in-style" type="text" name="riding_style">
+                <label for="mail-in-suspension"><span class="required">Suspension make and model</span></label>
+                <input id="mail-in-suspension" type="text" name="suspension_make_and_model" aria-describedby="mail-in-suspension-help" required>
+                <p class="field-help" id="mail-in-suspension-help">Include each component you're mailing in, for example: Fox 36 Factory fork and Float X2 shock.</p>
+            </fieldset>
+
+            <fieldset>
+                <label for="mail-in-style"><span class="required">Riding style</span></label>
+                <input id="mail-in-style" type="text" name="riding_style" required>
             </fieldset>
 
             <fieldset>

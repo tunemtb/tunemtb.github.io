@@ -1,0 +1,98 @@
+.mail-in-contact {
+    background-color: $white;
+    color: $dark-grey;
+    max-width: 1200px;
+    padding: 30px;
+
+    @include mq(lg) {
+        padding: 50px 100px 70px;
+    }
+}
+
+.mail-in-page-title h1 {
+    font-size: 32px;
+
+    @include mq(sm) {
+        font-size: 40px;
+    }
+
+    @include mq(lg) {
+        font-size: 50px;
+    }
+}
+
+.mail-in-contact__intro {
+    margin-bottom: 30px;
+
+    p {
+        margin: 0;
+
+        & + p {
+            margin-top: 10px;
+        }
+    }
+}
+
+.mail-in-contact__grid {
+    display: grid;
+    gap: 35px;
+
+    @include mq(md) {
+        align-items: start;
+        grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr);
+    }
+}
+
+.mail-in-contact__photo {
+    background-color: $black;
+    margin: 0;
+    padding: 10px;
+
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    figcaption {
+        color: $white;
+        font-size: 15px;
+        line-height: 1.4;
+        padding: 12px 8px 4px;
+    }
+}
+
+.required::after {
+    color: #b00020;
+    content: " *";
+}
+
+.mail-in-contact__form {
+    fieldset {
+        margin-bottom: 24px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input,
+    textarea {
+        background-color: $white;
+    }
+
+    .form-button {
+        background-color: $black;
+        border: 3px solid $black;
+        color: $white;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:focus,
+        &:hover {
+            background-color: $gold;
+            color: $black;
+            outline: 0;
+        }
+    }
+}

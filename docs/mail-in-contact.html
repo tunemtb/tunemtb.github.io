@@ -29,10 +29,14 @@ permalink: /mail-in-contact/
             class="mail-in-contact__form"
             data-ajax-form
             data-success-message="Your mail-in service request has been sent. Tune MTB will email you with shipping instructions and next steps."
-            action="{{ site.formspree_endpoint }}"
+            action="{{ site.formspree_mail_in_endpoint }}"
             method="POST"
             aria-describedby="mail-in-form-status">
             <input type="hidden" name="request_type" value="Mail-In Service Request">
+            <div class="form-honeypot" aria-hidden="true">
+                <label for="mail-in-company">Leave this field empty</label>
+                <input id="mail-in-company" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
 
             <fieldset>
                 <label for="mail-in-name"><span class="required">Name</span></label>

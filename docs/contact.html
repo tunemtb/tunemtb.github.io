@@ -64,9 +64,13 @@ permalink: /contact/
       id="contact-form"
       data-ajax-form
       data-success-message="Thanks for reaching out. Your message has been sent to Tune MTB."
-      action="{{ site.formspree_endpoint }}"
+      action="{{ site.formspree_contact_endpoint }}"
       method="POST"
       aria-describedby="contact-form-status">
+      <div class="form-honeypot" aria-hidden="true">
+        <label for="contact-company">Leave this field empty</label>
+        <input id="contact-company" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
       <fieldset>
         <label for="contact-email">Your email:</label>
         <input id="contact-email" type="email" name="_replyto" autocomplete="email" required>

@@ -20,6 +20,10 @@
       }).filter(Boolean).join(' ');
     }
 
+    if (data && typeof data.error === 'string' && data.error) {
+      return data.error;
+    }
+
     return 'We could not send your message. Please try again or call Tune MTB at 585-434-4030.';
   }
 

@@ -4,6 +4,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Mountain Bike Service and Suspension. Rochester, NY.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tunemtb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+formspree_endpoint: "https://formspree.io/xrgywvqw"
 
 # Build settings
 # theme: minima

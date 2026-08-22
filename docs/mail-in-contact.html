@@ -25,7 +25,13 @@ permalink: /mail-in-contact/
             <figcaption>Professional suspension service, down to the smallest component.</figcaption>
         </figure>
 
-        <form class="mail-in-contact__form" action="https://formspree.io/xrgywvqw" method="POST">
+        <form
+            class="mail-in-contact__form"
+            data-ajax-form
+            data-success-message="Your mail-in service request has been sent. Tune MTB will email you with shipping instructions and next steps."
+            action="{{ site.formspree_endpoint }}"
+            method="POST"
+            aria-describedby="mail-in-form-status">
             <input type="hidden" name="request_type" value="Mail-In Service Request">
 
             <fieldset>
@@ -59,6 +65,7 @@ permalink: /mail-in-contact/
             </fieldset>
 
             <button class="form-button" type="submit">Send Request</button>
+            <div class="form-status" id="mail-in-form-status" role="status" aria-live="polite"></div>
         </form>
     </div>
 </div>

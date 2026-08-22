@@ -61,22 +61,23 @@ permalink: /contact/
   </div>
   <div class="contact-form__col contact-form__col--form">
     <form
-      action="https://formspree.io/xrgywvqw"
-      method="POST">
+      id="contact-form"
+      data-ajax-form
+      data-success-message="Thanks for reaching out. Your message has been sent to Tune MTB."
+      action="{{ site.formspree_endpoint }}"
+      method="POST"
+      aria-describedby="contact-form-status">
       <fieldset>
-        <label>
-          Your email:
-          <input type="text" name="_replyto">
-        </label>
+        <label for="contact-email">Your email:</label>
+        <input id="contact-email" type="email" name="_replyto" autocomplete="email" required>
       </fieldset>
       <fieldset>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
+        <label for="contact-message">Your message:</label>
+        <textarea id="contact-message" name="message" required></textarea>
       </fieldset>
 
       <button class="form-button" type="submit">Send</button>
+      <div class="form-status" id="contact-form-status" role="status" aria-live="polite"></div>
     </form>
   </div>
 </div>

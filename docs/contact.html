@@ -34,23 +34,23 @@ permalink: /contact/
           </tr>
           <tr>
               <th>Tuesday</th>
-              <td>10 AM -- 6 PM</td>
+              <td>11 AM -- 6 PM</td>
           </tr>
           <tr>
               <th>Wednesday</th>
-              <td>10 AM -- 6 PM</td>
+              <td>11 AM -- 6 PM</td>
           </tr>
           <tr>
               <th>Thursday</th>
-              <td>10 AM -- 6 PM</td>
+              <td>11 AM -- 6 PM</td>
           </tr>
           <tr>
               <th>Friday</th>
-              <td>10 AM -- 6 PM</td>
+              <td>11 AM -- 6 PM</td>
           </tr>
           <tr>
               <th>Saturday</th>
-              <td>10 AM -- 4 PM</td>
+              <td>11 AM -- 4 PM</td>
           </tr>
           <tr>
               <th>Sunday</th>
@@ -61,22 +61,28 @@ permalink: /contact/
   </div>
   <div class="contact-form__col contact-form__col--form">
     <form
-      action="https://formspree.io/xrgywvqw"
-      method="POST">
+      id="contact-form"
+      data-ajax-form
+      data-success-message="Thanks for reaching out. Your message has been sent to Tune MTB."
+      action="{{ site.formspree_contact_endpoint }}"
+      method="POST"
+      aria-describedby="contact-form-status">
+      <p class="form-requirements">Fields marked with <span class="required-symbol">*</span> are required.</p>
+      <div class="form-honeypot" aria-hidden="true">
+        <label for="contact-company">Leave this field empty</label>
+        <input id="contact-company" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
       <fieldset>
-        <label>
-          Your email:
-          <input type="text" name="_replyto">
-        </label>
+        <label for="contact-email"><span class="required">Your email</span></label>
+        <input id="contact-email" type="email" name="_replyto" autocomplete="email" required>
       </fieldset>
       <fieldset>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
+        <label for="contact-message"><span class="required">Your message</span></label>
+        <textarea id="contact-message" name="message" required></textarea>
       </fieldset>
 
       <button class="form-button" type="submit">Send</button>
+      <div class="form-status" id="contact-form-status" role="status" aria-live="polite"></div>
     </form>
   </div>
 </div>

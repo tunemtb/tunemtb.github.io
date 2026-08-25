@@ -1,0 +1,81 @@
+---
+layout: default
+title: Mail-In Service Request | Tune MTB
+description: Start a mail-in bicycle suspension service request with Tune MTB.
+permalink: /mail-in-contact/
+---
+
+<div class="page-hero">
+    <picture>
+        <source media="(min-width:768px)" srcset="{{ site.url }}/assets/images/photos/contact-hero.jpg">
+        <img src="{{ site.url }}/assets/images/photos/contact-hero.jpg" alt="Tune MTB service shop" class="hero__image"/>
+    </picture>
+    <div class="page-title mail-in-page-title"><h1>Mail-In Service</h1></div>
+</div>
+
+<div class="mail-in-contact">
+    <div class="standout mail-in-contact__intro">
+        <p>Fill out this form to start a mail-in service request. We will email you with shipping instructions and next steps.</p>
+        <p class="form-requirements">Fields marked with <span class="required-symbol">*</span> are required.</p>
+    </div>
+
+    <div class="mail-in-contact__grid">
+        <figure class="mail-in-contact__photo">
+            <img src="{{ site.url }}/assets/images/photos/mail-in-shock-service.png" alt="Fox Float DPX2 rear shock disassembled for service"/>
+            <figcaption>Professional suspension service, down to the smallest component.</figcaption>
+        </figure>
+
+        <form
+            class="mail-in-contact__form"
+            data-ajax-form
+            data-success-message="Your mail-in service request has been sent. Tune MTB will email you with shipping instructions and next steps."
+            action="{{ site.formspree_mail_in_endpoint }}"
+            method="POST"
+            aria-describedby="mail-in-form-status">
+            <input type="hidden" name="request_type" value="Mail-In Service Request">
+            <div class="form-honeypot" aria-hidden="true">
+                <label for="mail-in-company">Leave this field empty</label>
+                <input id="mail-in-company" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+
+            <fieldset>
+                <label for="mail-in-name"><span class="required">Name</span></label>
+                <input id="mail-in-name" type="text" name="name" autocomplete="name" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="mail-in-email"><span class="required">Email address</span></label>
+                <input id="mail-in-email" type="email" name="email" autocomplete="email" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="mail-in-phone"><span class="required">Phone number</span></label>
+                <input id="mail-in-phone" type="tel" name="phone" autocomplete="tel" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="mail-in-bike"><span class="required">Bike year, make and model</span></label>
+                <input id="mail-in-bike" type="text" name="bike_year_make_model" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="mail-in-suspension"><span class="required">Suspension make and model</span></label>
+                <input id="mail-in-suspension" type="text" name="suspension_make_and_model" aria-describedby="mail-in-suspension-help" required>
+                <p class="field-help" id="mail-in-suspension-help">Include each component you're mailing in, for example: Fox 36 Factory fork and Float X2 shock.</p>
+            </fieldset>
+
+            <fieldset>
+                <label for="mail-in-style"><span class="required">Riding style</span></label>
+                <input id="mail-in-style" type="text" name="riding_style" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="mail-in-services"><span class="required">Services requested</span></label>
+                <textarea id="mail-in-services" name="services_requested" required></textarea>
+            </fieldset>
+
+            <button class="form-button" type="submit">Send Request</button>
+            <div class="form-status" id="mail-in-form-status" role="status" aria-live="polite"></div>
+        </form>
+    </div>
+</div>

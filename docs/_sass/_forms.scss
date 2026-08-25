@@ -1,3 +1,33 @@
+.form-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-requirements {
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+
+.required::after,
+.required-symbol {
+  color: #b00020;
+}
+
+.required::after {
+  content: " *";
+}
+
+.field-help {
+  color: lighten($dark-grey, 24%);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  margin: 8px 0 0;
+}
+
 input[type='color'],
 input[type='date'],
 input[type='datetime'],
@@ -70,4 +100,40 @@ input[type='radio'] {
   font-size: 1.5rem;
   padding: 7px 15px;
   text-transform: uppercase;
+
+  &:disabled {
+    cursor: wait;
+    opacity: .62;
+  }
+}
+
+.form-status {
+  border-left: 5px solid transparent;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.45;
+  margin-top: 18px;
+  padding: 12px 15px;
+
+  &:empty {
+    display: none;
+  }
+
+  &.is-pending {
+    background-color: lighten($dark-grey, 68%);
+    border-left-color: $dark-grey;
+    color: $dark-grey;
+  }
+
+  &.is-success {
+    background-color: lighten($green, 34%);
+    border-left-color: darken($green, 14%);
+    color: $dark-grey;
+  }
+
+  &.is-error {
+    background-color: #f9e2e2;
+    border-left-color: #a40000;
+    color: #780000;
+  }
 }

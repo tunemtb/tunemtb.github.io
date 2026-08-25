@@ -190,3 +190,28 @@
 .callout-2__service-menu-link {
     font-weight: bold;
 }
+
+.banshee-dealer-banner {
+    background-color: $black;
+    border-bottom: 5px solid $gold;
+    border-top: 5px solid $gold;
+    color: $white;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 20px 30px;
+    text-align: center;
+
+    @include mq(sm) {
+        font-size: 25px;
+        padding: 24px 40px;
+    }
+
+    a {
+        color: $gold;
+
+        &:focus,
+        &:hover {
+            color: $white;
+        }
+    }
+}
